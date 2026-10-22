@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          { "type": "command", "command": "/usr/bin/python3 -I $HOME/.claude/hooks/neo_taint_guard.py", "timeout": 10 }
+        ]
+      }
+    ]
+  }
+}
